@@ -1,6 +1,5 @@
 package cgb.java.cglib;
 import java.lang.reflect.Method;
-
 import net.sf.cglib.proxy.Callback;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -20,7 +19,7 @@ public class CGLIBProxyUtil {
 			System.out.println("filter start");
 			Object result=proxy.invokeSuper(obj, args);
 			System.out.println("filter end");
-			return result;
+			return result; 
 		}
 	}
 	public static Object newProxy(Class<?> targetClass,
